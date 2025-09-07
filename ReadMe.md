@@ -52,12 +52,13 @@ Here’s a simplified view of how FastAPI handles requests:
 ```mermaid
 flowchart TD
     A[Client (Browser / API Client)] --> B[FastAPI Application]
-    B --> C[Request Validation<br/>(Pydantic)]
+    B --> C[Request Validation (Pydantic)]
     B --> D[Routing (Endpoints)]
-    B --> E[Business Logic<br/>(Python Code)]
+    B --> E[Business Logic (Python Code)]
     C --> F[Response (JSON)]
     D --> F
     E --> F
+
 
 
 ---
