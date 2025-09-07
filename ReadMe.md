@@ -49,20 +49,16 @@ Each todo also has a **priority level**: Low, Medium, or High.
 
 Here’s a simplified view of how FastAPI handles requests:
 
-```
- Client (Browser / API Client)
-              |
-              v
-        FastAPI Application
-     --------------------------
-     |  Request Validation    |  <- Pydantic validates data
-     |  Routing (Endpoints)   |  <- Maps URL paths to functions
-     |  Business Logic        |  <- Your Python code runs here
-     --------------------------
-              |
-              v
-         Response (JSON)
-```
+```mermaid
+flowchart TD
+    A[Client (Browser / API Client)] --> B[FastAPI Application]
+    B --> C[Request Validation<br/>(Pydantic)]
+    B --> D[Routing (Endpoints)]
+    B --> E[Business Logic<br/>(Python Code)]
+    C --> F[Response (JSON)]
+    D --> F
+    E --> F
+
 
 ---
 
