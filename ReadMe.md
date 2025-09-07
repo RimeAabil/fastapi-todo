@@ -68,7 +68,7 @@ Here’s a simplified view of how FastAPI handles requests:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/fastapi-todo.git
+   git clone https://github.com/RimeAabil/fastapi-todo.git
    cd fastapi-todo
    ```
 
